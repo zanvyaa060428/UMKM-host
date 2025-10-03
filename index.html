@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Toko UMKM — Shopee-like Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-wrap">
+      <div class="brand"><i class="fa-solid fa-store fa-lg"></i> <span style="color:var(--brand)">Toko</span> UMKM</div>
+      <div class="search"><i class="fa-solid fa-magnifying-glass muted"></i><input id="searchInput" placeholder="Cari produk…" /></div>
+      <div class="nav-actions">
+        <div style="position:relative"><button class="icon-btn" id="notifBtn"><i class="fa-regular fa-bell"></i></button><span class="badge" id="notifCount" style="display:none">0</span></div>
+        <div style="position:relative"><button class="icon-btn" id="openCartBtn"><i class="fa-solid fa-bag-shopping"></i></button><span class="badge" id="cartCount">0</span></div>
+        <button class="icon-btn" id="userBtn"><i class="fa-regular fa-user"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Hero, Flash Sale, Product Grid, Account Area -->
+    <div class="hero"> ... </div>
+    <div class="grid" id="productGrid"></div>
+    <div id="accountArea" style="display:none;margin-top:18px" class="card"> ... </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <aside class="drawer" id="cartDrawer"> ... </aside>
+
+  <!-- Modals -->
+  <div id="modalOverlay" class="modal" onclick="overlayClick(event)"> ... </div>
+
+  <footer class="site">© <span id="year"></span> Toko UMKM — Demo</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
